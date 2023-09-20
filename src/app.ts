@@ -14,10 +14,10 @@ const cors = {
 
 const io = new Io.Server(server, { cors })
 
-io.on('connection', sok => {
+io.on('connection', socket => {
 
-  sok.on('teste', sok => {
-    console.log(sok)
+  socket.on('teste', socket => {
+    console.log(socket)
   })
 
 })
